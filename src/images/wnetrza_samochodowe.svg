@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="189px" height="189px" viewBox="0 0 189 189" enable-background="new 0 0 189 189" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="189" height="189"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<circle clip-path="url(#SVGID_2_)" fill="none" stroke="#233a9c" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" cx="94.5" cy="94.5" r="92"/>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#233a9c" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="
+		M158.934,81.83c0,0,1.103,8.253-5.147,5.753s-33.366-24.25-60.933-24.25h-0.254c-27.567,0-54.683,21.75-60.933,24.25
+		s-5.426-5.616-5.426-5.616l0.215-1.111c6.247-30.813,33.487-54.007,66.144-54.007c31.87,0,58.58,22.087,65.657,51.791
+		L158.934,81.83z"/>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#233a9c" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="
+		M28.576,115.752c0,0-1.075-6.585,5.591-6.585c6.667,0,22.334-0.334,28.5,2C68.833,113.5,76.5,121.5,77.5,128.667
+		c1,7.166,2.666,25.166,2.666,25.166s0.919,7.56-4.785,5.782l-1.561-0.428c-20.739-5.996-37.37-21.672-44.683-41.816L28.576,115.752
+		z"/>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#233a9c" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="
+		M156.572,115.752c0,0,1.398-6.585-5.268-6.585c-6.667,0-22.334-0.334-28.5,2c-6.167,2.333-13.834,10.333-14.834,17.5
+		c-1,7.166-2.666,25.166-2.666,25.166s-0.919,7.56,4.786,5.782l0.932-0.327c21.14-5.985,38.062-22.013,45.282-42.602
+		L156.572,115.752z"/>
+	
+		<circle clip-path="url(#SVGID_2_)" fill="none" stroke="#233a9c" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" cx="92.208" cy="93.875" r="16.542"/>
+</g>
+</svg>
