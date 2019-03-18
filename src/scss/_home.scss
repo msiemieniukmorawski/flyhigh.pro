@@ -1,0 +1,108 @@
+.hero{
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    min-height: 400px;
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-bottom: 104px;
+    }
+    &__text{
+
+    }
+    &__subhaeding{
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 46px;
+    }
+    &__haeding{
+        font-size: 71px;
+        font-weight: 600;
+        line-break: 116px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    &__images{
+
+    }
+}
+.who{
+    padding-top: 120px;
+    padding-bottom: 220px;
+    .container{
+        display: flex;
+    }
+    &__left{
+        width: 430px;
+    }
+    &__title{
+        padding-bottom: 90px;
+    }
+    &__paragraph{
+        padding-bottom: 70px;
+    }
+    &__right{
+        position: relative;
+    }
+    &__box{
+        padding:35px 60px;
+        height: 410px;
+        box-shadow: 0 0 18px rgba(21, 21, 21, 0.3);
+        position: absolute;
+        background: #fff;
+        text-align: center;
+        animation: topBottom 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        &__1{
+            animation-delay: 0.4s;
+            z-index: 2;
+            left: 9vw;
+            top:5vw;
+            .who__box__description{
+                color: #000000;
+            }
+        }
+        &__2{
+            animation-delay: 2.5s;
+            z-index: 1;
+            top: 20vw;
+            left: 27vw;
+            .who__box__description{
+                color: #2952ab;
+            }
+        }
+        &__3{
+            animation-delay: 0.9s;
+            z-index: 2;
+            top: 10vw;
+            left: 45vw;
+            .who__box__description{
+                color: #c3136a;
+            }
+        }
+        &__description{
+            text-align: left;
+            font-size: 28px;
+            line-height: 40px;
+            padding-top: 30px;
+        }
+    }
+
+}
+@keyframes topBottom {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    to {
+        transform: translate(0, 80px);
+    }
+}

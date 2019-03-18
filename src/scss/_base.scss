@@ -1,0 +1,121 @@
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  padding-top: 60px;
+  position: absolute;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  align-content: center;
+  position: relative;
+  &__text {
+    margin-right: 18px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    line-break: 33px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__humbaurger {
+    width: 43px;
+    position: relative;
+    cursor: pointer;
+    span {
+      display: block;
+      height: 2px;
+      width: 43px;
+      background: #fff;
+      margin-bottom: 8px;
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+.logo {
+}
+.container {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.menu {
+  &__close {
+    position: absolute;
+    width: 43px;
+    cursor: pointer;
+    span {
+      position: absolute;
+      width: 43px;
+      height: 2px;
+      background: #fff;
+      &:nth-of-type(1){
+        transform: rotate(45deg)
+      }
+      &:nth-of-type(2){
+        transform: rotate(-45deg)
+      }
+    }
+  }
+  &__pimary {
+    background: rgba(108, 138, 133, 0.9);
+    overflow: hidden;
+    position: fixed;
+    left: 200vw;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    transition: 0.5s all;
+    &.open {
+      left: 0;
+    }
+  }
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__col {
+    width: 35vw;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: 0.3s all;
+    &:hover{
+        color: #c3136a
+    }
+  }
+}
+.section__title{
+    color:#c3136a;
+    font-size: 50px;
+    font-weight: 600;
+}
+.paragraph{
+    color: #2c4059;
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 300;
+}
