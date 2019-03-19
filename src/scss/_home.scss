@@ -35,7 +35,7 @@
 }
 .who{
     padding-top: 120px;
-    padding-bottom: 220px;
+    padding-bottom: 110px;
     .container{
         display: flex;
     }
@@ -58,6 +58,7 @@
         position: absolute;
         background: #fff;
         text-align: center;
+        transform: translate(0, -30px);
         animation: topBottom 4s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
@@ -95,14 +96,85 @@
             padding-top: 30px;
         }
     }
-
 }
+
+.slider{
+    padding-bottom: 20px;
+    .container{
+        display: flex;
+        align-content: flex-start;
+        justify-content: space-between;
+    }
+    &__left{
+        width: 280px;
+        padding-bottom: 30px;
+    }
+    &__nav{
+        padding-bottom: 80px;
+        &__item{
+            font-size: 20px;
+            padding-bottom: 20px;
+            line-break: 25px;
+            font-weight: 600;
+            color: #000000;
+            cursor: pointer;
+            &--active{
+                color: #c3136a;
+            }
+        }
+    }
+    &__right{
+        width: calc(100% - 333px);
+    }
+    &__wrapper{
+        height: 100%;
+        background: url(../images/farmacja_w_poslce.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        >div{
+            position: relative;
+            height: 100%;
+            >div{
+                position: relative;
+                height: 100%;
+            }
+        }
+    }
+}
+.slide{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 100%;
+    &__description{
+        padding:38px 46px;
+        background: #fff; 
+        max-width: 661px;
+        box-shadow: 3px 3px 6px rgba(21,21,21,0.3);
+    }
+    &__title{
+        font-size: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #1e2f7c;
+        padding-bottom: 28px;
+    }
+}
+
+
 @keyframes topBottom {
     from {
-        transform: translate(0, 0px);
+        transform: translate(0, -30px);
     }
 
     to {
-        transform: translate(0, 80px);
+        transform: translate(0, 10px);
     }
 }
