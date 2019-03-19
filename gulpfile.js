@@ -1,16 +1,12 @@
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var sourcemaps = require("gulp-sourcemaps");
-var babel = require("gulp-babel");
-var browserSync = require("browser-sync").create();
-var inject = require("gulp-inject");
-var webp = require("gulp-webp");
-let uglify = require("gulp-uglify");
-
-// gulp.task('html', function() {
-//     return gulp.src('src/*.html')
-//         .pipe(gulp.dest('build/'))
-// });
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const sourcemaps = require("gulp-sourcemaps");
+const babel = require("gulp-babel");
+const browserSync = require("browser-sync").create();
+const inject = require("gulp-inject");
+const webp = require("gulp-webp");
+const uglify = require("gulp-uglify");
+const autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("images", function() {
   return gulp.src("src/images/*").pipe(gulp.dest("build/images"));
@@ -30,8 +26,15 @@ gulp.task("sass", function() {
   return gulp
     .src("src/scss/*.scss")
     .pipe(sourcemaps.init())
+
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(sourcemaps.write())
+    .pipe(
+      autoprefixer({
+        browsers: ["last 2 versions"],
+        cascade: false
+      })
+    )
     .pipe(gulp.dest("build/css"));
 });
 
