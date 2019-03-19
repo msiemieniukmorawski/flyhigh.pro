@@ -5,6 +5,7 @@ var babel = require("gulp-babel");
 var browserSync = require("browser-sync").create();
 var inject = require("gulp-inject");
 var webp = require("gulp-webp");
+let uglify = require("gulp-uglify");
 
 // gulp.task('html', function() {
 //     return gulp.src('src/*.html')
@@ -50,6 +51,7 @@ gulp.task("es6", function() {
       console.error(e);
       this.emit("end");
     })
+    .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });
 
